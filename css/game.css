@@ -1,0 +1,58 @@
+.game-board {
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.card-item {
+    width: 100px;
+    height: 150px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform: rotateY(0deg); /* Mặc định úp */
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.card-front {
+    background-color: #007bff;
+    color: white;
+}
+
+.card-back {
+    background-color: #ffffff;
+    color: #333;
+    transform: rotateY(180deg); /* Nội dung mặt sau ẩn */
+}
+
+.card-item.flipped .card-inner {
+    transform: rotateY(180deg); /* Khi lật, mặt sau hiện ra */
+}
+
+.card-item.matched .card-inner {
+    visibility: hidden; /* Thẻ biến mất khi khớp */
+}
+

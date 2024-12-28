@@ -1,0 +1,174 @@
+/* Tổng quát */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Tổng thể thanh điều hướng */
+
+.container {
+    background-color:powderblue; /* Màu nền xám nhạt */
+    padding: 20px; /* Tăng khoảng cách bên trong */
+    border-radius: 8px; /* Bo góc */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+.navbar {
+    background-color: #007bff; /* Màu nền xanh đậm */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    padding: 10px 20px; /* Tăng khoảng cách */
+}
+
+.navbar-light .navbar-brand {
+    color: #2397eb; /* Màu chữ của logo */
+    font-size: 1.5rem; /* Tăng kích thước logo */
+    font-weight: bold;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #1757e3; /* Màu khi di chuột qua logo */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #2397eb; /* Màu chữ trên các mục menu */
+    margin: 0 10px; /* Khoảng cách giữa các mục */
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #1757e3; /* Màu chữ khi di chuột qua */
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+
+/* Nút "Đăng nhập/Đăng ký" hoặc "Đăng xuất" */
+.navbar-light .btn {
+    background-color: #ffcc00; /* Màu vàng nổi bật */
+    color: #000; /* Màu chữ trên nút */
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-light .btn:hover {
+    background-color: #ffc107; /* Đổi màu vàng sáng hơn khi hover */
+    color: #fff;
+}
+
+
+/* Phần hero */
+.home-container .hero-section {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-section .btn {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+}
+
+/* Phần tính năng */
+.features-section {
+    padding: 40px 0;
+}
+
+.features-section h2 {
+    color: #333;
+    font-weight: bold;
+}
+
+.feature-card {
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-card img {
+    width: 100%; /* Đặt chiều rộng đầy đủ theo cột */
+    max-width: 200px; /* Giới hạn chiều rộng tối đa */
+    height: 150px; /* Chiều cao cố định */
+    object-fit: cover; /* Cắt ảnh để vừa khung mà không bị méo */
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng đổ bóng */
+}
+
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    color: #6a11cb;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.feature-card .btn {
+    color: white;
+    background-color: #6a11cb;
+    border: none;
+}
+
+.feature-card .btn:hover {
+    background-color: #2575fc;
+}
+
+/* Đổi màu nền cho footer */
+/* Footer */
+footer {
+    background-color: #0655a5; /* Màu xanh dương đậm */
+    color: #ffffff; /* Màu chữ trắng để nổi bật */
+    padding: 20px; /* Khoảng cách bên trong */
+    text-align: center; /* Canh giữa nội dung */
+    border-top: 5px solid #004085; /* Đường viền đậm phía trên */
+}
+
+/* Link trong footer */
+footer a {
+    color: #ffcc00; /* Màu vàng nổi bật */
+    font-weight: bold; /* Chữ đậm hơn */
+    text-decoration: none; /* Bỏ gạch chân mặc định */
+    transition: color 0.3s ease; /* Hiệu ứng mượt khi hover */
+}
+
+footer a:hover {
+    color: #e6e04b; /* Màu vàng sáng hơn khi hover */
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+
+/* Khoảng cách giữa các đoạn văn trong footer */
+footer p {
+    margin: 0; /* Bỏ khoảng cách mặc định */
+    line-height: 1.6; /* Khoảng cách giữa các dòng */
+}
+
