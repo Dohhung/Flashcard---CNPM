@@ -1,0 +1,35 @@
+/* Định dạng cho container đăng ký */
+.register-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Đảm bảo độ rộng tối đa */
+    margin: 0 auto; /* Căn giữa */
+}
+
+/* Định dạng cho thông báo lỗi */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Định dạng cho liên kết đăng nhập */
+.register-container .signup-link {
+    text-align: center; /* Căn giữa văn bản */
+    margin-top: 20px; /* Khoảng cách từ form tới liên kết */
+    font-size: 14px;
+}
+
+.register-container .signup-link a {
+    text-decoration: none; /* Không gạch chân */
+    color: #007bff; /* Màu xanh tiêu chuẩn */
+    font-weight: bold; /* Chữ đậm */
+}
+
+.register-container .signup-link a:hover {
+    color: #0056b3; /* Màu xanh đậm khi hover */
+    text-decoration: underline; /* Gạch chân khi hover */
+}

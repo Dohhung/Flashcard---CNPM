@@ -1,0 +1,85 @@
+ /* To make the page fill the screen */
+ body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Background color of the page */
+body {
+    background-color: #22aec7; /* Màu xanh dương vừa phải */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container will be centered and will stretch on smaller screens */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.alert {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    border-color: #007BFF;
+    transition: background-color 0.3s, border-color 0.3s;
+    width: auto; /* Đặt chiều rộng tự động để nút nhỏ lại */
+    padding: 10px 20px; /* Thêm khoảng cách bên trong để nút có kích thước hợp lý */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    width: auto; /* Đặt chiều rộng tự động cho nút quay lại */
+    padding: 10px 20px;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table {
+    background-color: powderblue;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* For the form */
+textarea {
+    resize: none;
+}
+/* Title with background blue */
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
