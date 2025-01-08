@@ -1,0 +1,78 @@
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 cột mỗi hàng */
+    gap: 10px;
+    margin: 0 auto; /* Đảm bảo căn giữa */
+    width: 100%; /* Đảm bảo không giới hạn chiều rộng */
+}
+
+.card-item {
+    width: 100%; /* Chiều rộng của thẻ sẽ điều chỉnh theo cột */
+    height: 150px; /* Giữ chiều cao thẻ như trước */
+    perspective: 1000px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform: rotateY(0deg); /* Mặc định úp */
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px; /* Điều chỉnh lại kích thước chữ nếu cần */
+    border-radius: 8px;
+}
+
+.card-front {
+    background-color: #007bff;
+    color: white;
+}
+
+.card-back {
+    background-color: #ffffff;
+    color: #333;
+    transform: rotateY(180deg); /* Nội dung mặt sau ẩn */
+}
+
+.card-item.flipped .card-inner {
+    transform: rotateY(180deg); /* Khi lật, mặt sau hiện ra */
+}
+
+.card-item.matched .card-inner {
+    visibility: hidden; /* Thẻ biến mất khi khớp */
+}
+
+@media (max-width: 1024px) {
+    .game-board {
+        grid-template-columns: repeat(6, 1fr); /* 6 cột cho tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .game-board {
+        grid-template-columns: repeat(4, 1fr); /* 4 cột cho màn hình nhỏ hơn */
+    }
+}
+
+@media (max-width: 480px) {
+    .game-board {
+        grid-template-columns: repeat(2, 1fr); /* 2 cột cho màn hình rất nhỏ */
+    }
+}

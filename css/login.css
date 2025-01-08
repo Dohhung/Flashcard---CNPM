@@ -1,0 +1,66 @@
+/* Định dạng chung cho trang đăng nhập */
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Định dạng container đăng nhập */
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề của container */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Định dạng form control */
+.login-container .form-control {
+    margin-bottom: 15px;
+}
+
+/* Định dạng thông báo lỗi */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Định dạng cho container đăng nhập */
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Đảm bảo độ rộng tối đa */
+    margin: 0 auto; /* Căn giữa */
+}
+
+/* Định dạng cho liên kết đăng ký */
+.signup-link {
+    text-align: center; /* Căn giữa văn bản */
+    margin-top: 20px; /* Khoảng cách từ form tới liên kết */
+    font-size: 14px;
+}
+
+.signup-link a {
+    text-decoration: none; /* Không gạch chân */
+    color: #007bff; /* Màu xanh tiêu chuẩn */
+    font-weight: bold; /* Chữ đậm */
+}
+
+.signup-link a:hover {
+    color: #0056b3; /* Màu xanh đậm khi hover */
+    text-decoration: underline; /* Gạch chân khi hover */
+}
